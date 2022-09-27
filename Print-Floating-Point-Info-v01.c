@@ -37,12 +37,12 @@ int main(int argc, char **argv)
 {
     float f;
 
-    printf("Please enter a floating point number: ");
+    printf("Please enter a floating point number: "); fflush(stdout);
 
     while(scanf("%f", &f)) {
-        printf("\n%10g = %24.17g = ", f, f);
-        print_float_bits(f);
-        printf("\n\nPlease enter a floating point number: ");
+        printf("\n%10g = %24.17g = ", f, f); fflush(stdout);
+        print_float_bits(f); fflush(stdout);
+        printf("\n\nPlease enter a floating point number: "); fflush(stdout);
     }
 
     return 0;
