@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 
     printf("Please enter a floating point number: ");
 
-    while(scanf("%f", &f)) {
+    while(scanf("%f", &f) == 1) {
         printf("\n%10g = %24.17g = ", f, f);
         print_float_bits(f);
         printf("\n\nPlease enter a floating point number: ");
